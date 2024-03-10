@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicholas M Personal Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="Mediaqueries.css">
+    <script src="https://kit.fontawesome.com/bb35496b1a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Nicholasicon.png" alt="Nicholas Logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-txt">
+                <p>Front end Developer</p>
+                <h1>Hi, I'm <span>Nicholas</span> <br> from Atlanta, Ga</h1>
+            </div>
+        </div>
+    </div>
+    
+    <!--about-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Iphone1.jpeg" alt="" width="200px">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="title">About Me</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Eu sem integer vitae justo eget. Lectus magna fringilla urna porttitor rhoncus dolor purus non enim. 
+                        Duis at consectetur lorem donec massa sapien faucibus et. 
+                        Cursus in hac habitasse platea dictumst quisque sagittis purus sit. A diam sollicitudin tempor id eu. 
+                        Pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna. Diam maecenas ultricies mi eget mauris pharetra et. 
+                        Vitae tortor condimentum lacinia quis vel. Enim eu turpis egestas pretium aenean pharetra magna. Elementum nibh tellus molestie nunc non blandit. 
+                        Bibendum ut tristique et egestas quis ipsum. Venenatis cras sed felis eget velit. Leo a diam sollicitudin tempor id eu nisl.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web Applications</li>
+                            <li><span>Web Development</span><br>Web Application Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br>Web Developement Via Freelancing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Udacity FrontEnd Developement Course</li>
+                            <li><span>2020 - 2021</span><br>Associate's of Science In CyberSecurity</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---Services--->
+    <div id="services">
+        <div class="container">
+            <h1 class="title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aliquam explicabo ad? Corporis, consectetur! Quo, alias ratione. Ratione eos quidem animi voluptas, voluptatem quia pariatur dolor ipsa nulla sed obcaecati.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-store"></i>
+                    <h2>E-Commerce</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aliquam explicabo ad? Corporis, consectetur! Quo, alias ratione. Ratione eos quidem animi voluptas, voluptatem quia pariatur dolor ipsa nulla sed obcaecati.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-globe"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aliquam explicabo ad? Corporis, consectetur! Quo, alias ratione. Ratione eos quidem animi voluptas, voluptatem quia pariatur dolor ipsa nulla sed obcaecati.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---Portfolio--->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/BFlowers.jpeg" alt="Lst Floral Website">
+                    <div class="txt-overlay">
+                        <h3>Lst Floral</h3>
+                        <p>Local Floralist that caters any special event.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/CoffeeShop.jpeg" alt="Lst Floral Website">
+                    <div class="txt-overlay">
+                        <h3>Coffee Shop</h3>
+                        <p>Coffee Shop displaying .</p>
+                        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Ecommerce.jpeg" alt="Lst Floral Website">
+                    <div class="txt-overlay">
+                        <h3>E-Commerce</h3>
+                        <p>Local Floralist that caters any special event.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!---Contact--->
+    <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="title">Contact Me</h1>
+                    <p><i class="fa-solid fa-square-arrow-up-right"></i>Contact@Example.com</p>
+                    <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Cover-Letter.pages" download class="btn cv-btn">Download CV</a>
+                 </div>   
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message Me" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn cv-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright Nicholas. Made with VsCode</p>
+        </div>
+    </div>
+    <script>
+        var tablinks  = document.getElementsByClassName('tab-links');
+        var tabcontents =  document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById('sidemenu');
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = '-200px';
+        }
+    </script>
+</body>
+</html>
